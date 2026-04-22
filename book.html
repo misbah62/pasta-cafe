@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Settantatré — Reserve your table for an unforgettable artisanal Italian dining experience in the heart of Florence."/>
+  <title>Settantatré | Prenotazioni</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Plus+Jakarta+Sans:wght@200..800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <link href="css/style.css" rel="stylesheet"/>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary-fixed": "#ffdbcb", "on-secondary-fixed-variant": "#474747", "outline": "#85736b",
+            "on-background": "#1c1b1b", "tertiary-fixed-dim": "#88d3d6", "secondary-fixed-dim": "#c6c6c6",
+            "primary-fixed-dim": "#ffb691", "surface-dim": "#dcd9d9", "surface-container-highest": "#e5e2e1",
+            "inverse-surface": "#313030", "surface-tint": "#8a4f2f", "surface-bright": "#fcf9f8",
+            "tertiary": "#0e696c", "on-error": "#ffffff", "on-tertiary-fixed-variant": "#004f52",
+            "tertiary-fixed": "#a4eff2", "outline-variant": "#d8c2b9", "surface-container-lowest": "#ffffff",
+            "surface": "#fcf9f8", "on-primary": "#ffffff", "on-surface": "#1c1b1b", "primary": "#8a4f2f",
+            "on-error-container": "#93000a", "inverse-on-surface": "#f3f0ef", "surface-container-low": "#f6f3f2",
+            "on-secondary-container": "#646464", "on-primary-fixed": "#341100", "on-tertiary": "#ffffff",
+            "error": "#ba1a1a", "secondary-fixed": "#e2e2e2", "on-tertiary-container": "#004e51",
+            "on-tertiary-fixed": "#002021", "primary-container": "#eda27c", "secondary-container": "#e2e2e2",
+            "inverse-primary": "#ffb691", "on-secondary": "#ffffff", "on-primary-container": "#6c3719",
+            "on-secondary-fixed": "#1b1b1b", "on-surface-variant": "#53443d", "surface-container-high": "#eae7e7",
+            "surface-container": "#f0eded", "tertiary-container": "#75c0c3", "background": "#fcf9f8",
+            "secondary": "#5e5e5e", "on-primary-fixed-variant": "#6e381b", "surface-variant": "#e5e2e1",
+            "error-container": "#ffdad6"
+          },
+          borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" },
+          spacing: {
+            "container-padding": "64px", "stack-md": "24px", "stack-sm": "12px",
+            "base": "8px", "gutter": "24px", "section-gap": "128px"
+          },
+          fontFamily: {
+            "body-lg": ["Plus Jakarta Sans"], "headline-md": ["Newsreader"], "body-md": ["Plus Jakarta Sans"],
+            "headline-xl": ["Newsreader"], "headline-lg": ["Newsreader"], "label-caps": ["Plus Jakarta Sans"]
+          },
+          fontSize: {
+            "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+            "headline-md": ["32px", {"lineHeight": "1.2", "fontWeight": "500"}],
+            "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+            "headline-xl": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+            "headline-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "400"}],
+            "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "700"}]
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+    body { background-color: #fcf9f8; }
+  </style>
+</head>
+<body class="text-on-background">
+
+<!-- ══════════ TOP NAV ══════════ -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-stone-200 border-b-[0.5px] transition-all duration-300">
+  <div class="flex justify-between items-center w-full px-8 py-4">
+    <div class="flex items-center gap-8">
+      <a class="text-2xl font-bold font-serif text-stone-900 italic tracking-tight" href="index.html">Settantatré</a>
+      <nav class="hidden md:flex gap-6 items-center">
+        <a class="font-serif text-stone-500 hover:text-[#EDA27C] transition-colors duration-300" href="index.html">Home</a>
+        <a class="font-serif text-stone-500 hover:text-[#EDA27C] transition-colors duration-300" href="menu.html">Menu</a>
+        <a class="font-serif text-stone-500 hover:text-[#EDA27C] transition-colors duration-300" href="about.html">About</a>
+        <a class="font-serif text-[#EDA27C] font-bold" href="book.html">Book</a>
+      </nav>
+    </div>
+    <div class="flex items-center gap-4 text-stone-900">
+      <span class="material-symbols-outlined cursor-pointer p-2">shopping_basket</span>
+    </div>
+  </div>
+</header>
+
+<main class="pt-32">
+
+  <!-- ══════════ HERO TITLE ══════════ -->
+  <section class="px-container-padding mb-stack-md">
+    <div class="max-w-4xl">
+      <p class="font-label-caps text-label-caps text-primary mb-4">RESERVATIONS</p>
+      <h1 class="font-headline-xl text-headline-xl text-stone-900 mb-8 italic">Un'esperienza indimenticabile.</h1>
+      <p class="font-body-lg text-body-lg text-secondary max-w-2xl">Join us for an evening of artisanal Italian excellence. Every seat at Settantatré is a front-row ticket to the artistry of simplicity.</p>
+    </div>
+  </section>
+
+  <!-- ══════════ BOOKING & CONTACT BENTO ══════════ -->
+  <section class="px-container-padding py-16">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+
+      <!-- Booking Form -->
+      <div class="lg:col-span-7 bg-white p-12 border border-stone-100 flex flex-col justify-between">
+        <div>
+          <h2 class="font-headline-md text-headline-md text-stone-900 mb-12">Reserve your table</h2>
+          <form id="booking-form" class="space-y-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+              <div class="space-y-2">
+                <label class="font-label-caps text-label-caps text-stone-400 block">DATE</label>
+                <input class="w-full border-b border-stone-200 border-t-0 border-l-0 border-r-0 px-0 py-2 bg-transparent font-body-md text-body-md text-stone-900" type="date" required/>
+              </div>
+              <div class="space-y-2">
+                <label class="font-label-caps text-label-caps text-stone-400 block">GUESTS</label>
+                <select class="w-full border-b border-stone-200 border-t-0 border-l-0 border-r-0 px-0 py-2 bg-transparent font-body-md text-body-md text-stone-900">
+                  <option>2 People</option>
+                  <option>3 People</option>
+                  <option>4 People</option>
+                  <option>5+ People (Contact us)</option>
+                </select>
+              </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+              <div class="space-y-2">
+                <label class="font-label-caps text-label-caps text-stone-400 block">TIME</label>
+                <select class="w-full border-b border-stone-200 border-t-0 border-l-0 border-r-0 px-0 py-2 bg-transparent font-body-md text-body-md text-stone-900">
+                  <option>19:00</option>
+                  <option>19:30</option>
+                  <option>20:00</option>
+                  <option>20:30</option>
+                  <option>21:00</option>
+                </select>
+              </div>
+              <div class="space-y-2">
+                <label class="font-label-caps text-label-caps text-stone-400 block">OCCASION</label>
+                <input class="w-full border-b border-stone-200 border-t-0 border-l-0 border-r-0 px-0 py-2 bg-transparent font-body-md text-body-md text-stone-900 placeholder-stone-300" placeholder="Anniversary, Birthday..." type="text"/>
+              </div>
+            </div>
+            <div class="space-y-2 pt-4">
+              <label class="font-label-caps text-label-caps text-stone-400 block">FULL NAME</label>
+              <input class="w-full border-b border-stone-200 border-t-0 border-l-0 border-r-0 px-0 py-2 bg-transparent font-body-md text-body-md text-stone-900 placeholder-stone-300" placeholder="Your name" type="text" required/>
+            </div>
+            <div class="space-y-2">
+              <label class="font-label-caps text-label-caps text-stone-400 block">SPECIAL REQUESTS</label>
+              <textarea class="w-full border-b border-stone-200 border-t-0 border-l-0 border-r-0 px-0 py-2 bg-transparent font-body-md text-body-md text-stone-900 placeholder-stone-300 resize-none" placeholder="Dietary restrictions or preferred seating..." rows="3"></textarea>
+            </div>
+            <button class="w-full bg-stone-900 text-white font-label-caps text-label-caps py-6 tracking-[0.2em] hover:bg-primary transition-colors duration-300 mt-8" type="submit">
+              CONFIRM RESERVATION
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Right: Details -->
+      <div class="lg:col-span-5 flex flex-col gap-gutter">
+        <!-- Image -->
+        <div class="relative h-[300px] overflow-hidden group">
+          <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+               src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjBh_jtr8nIlPHNyBcWBR3bG1m33v-2Nkvk7IvQ_FIo-rVb-lvDhjj6iwuNLMoVDNjV0J0IhMoxnrfNCnUDywrc9eoMR4GLROetzROnSKsSOp-wlYML4FOWCUDa9ao6CxLmgC6divuLiFaB_ih_bSqFiKaeevQ7Yb9ZfawAuuMDSBMBoXQnfAVDZur77GfOmOOTSjcLSW8IXZeSFblh9hp2rE2G_i1pdKAVIXyr1e2264YavNTylC9beaLbmvy0v99oruNwgi4lV_U"
+               alt="Intimate candlelit dining table in historic Italian building"/>
+          <div class="absolute inset-0 bg-black/20 flex items-center justify-center">
+            <div class="border border-white/40 p-8 backdrop-blur-sm">
+              <span class="text-white font-headline-md italic">A Tavola</span>
+            </div>
+          </div>
+        </div>
+        <!-- Contact Card -->
+        <div class="bg-stone-50 p-12 border border-stone-100 flex-grow">
+          <h3 class="font-headline-md text-headline-md text-stone-900 mb-8">Contacts</h3>
+          <div class="space-y-8">
+            <div>
+              <p class="font-label-caps text-label-caps text-primary mb-2">LOCATION</p>
+              <p class="font-body-md text-body-md text-stone-900">Via del Corso 73, 50122<br/>Firenze, Italia</p>
+            </div>
+            <div>
+              <p class="font-label-caps text-label-caps text-primary mb-2">PHONE</p>
+              <a class="font-body-md text-body-md text-stone-900 hover:text-primary transition-colors" href="tel:+390612345678">+39 06 1234 5678</a>
+            </div>
+            <div>
+              <p class="font-label-caps text-label-caps text-primary mb-2">HOURS</p>
+              <p class="font-body-md text-body-md text-stone-900">Tue – Sun: 18:30 – 23:30<br/>Monday: Closed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════ MAP SECTION ══════════ -->
+  <section class="mt-section-gap px-container-padding relative">
+    <div class="max-w-6xl mx-auto">
+      <div class="mb-12 flex justify-between items-end">
+        <h2 class="font-headline-lg text-headline-lg italic">The Heart of Florence.</h2>
+        <a class="font-label-caps text-label-caps border-b border-primary pb-1 text-primary hover:opacity-70 transition-opacity"
+           href="https://www.google.com/maps?q=Via+del+Corso+73,Firenze" target="_blank" rel="noopener">GET DIRECTIONS</a>
+      </div>
+      <div class="h-[500px] bg-stone-200 grayscale contrast-[1.1] relative overflow-hidden">
+        <img class="w-full h-full object-cover" 
+             src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKg6MbRZqY_0FBgmOd3U0_8EDcN7KJIHollNLmdzkD4kMOVgaZaxcDoFajj5n3uu4xx4r3yrZOaiPkJ_RiVD8jLHP7kUHQKiH2SBfS9Fr7CynAL8RJQ2TIFhTiNqk9RW59iLiubA7HIpdgzrK6xfz0KneSAPib54hZjtLkLHSRJFSYMz8Tz0Yve7W3mQJLzY9k0lzQXdOpCjUsixVpri1hDhEe0DsjtWYMAmeWDlI8xxYoCs75-syNcqdvWBNEP9u6Y7v5KYclCV_b"
+             alt="Aerial view of historic Florence Italy"/>
+        <div class="absolute inset-0 flex items-center justify-center">
+          <div class="bg-white px-6 py-4 shadow-xl border border-stone-100">
+            <p class="font-serif italic text-stone-900">73 Settantatré</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ CLOSING SECTION ══════════ -->
+  <section class="mt-section-gap px-container-padding flex justify-center">
+    <div class="w-full max-w-4xl text-center">
+      <div class="mb-stack-md flex justify-center">
+        <div class="w-32 h-32 rounded-full border border-stone-200 flex items-center justify-center p-4 text-center">
+          <span class="font-serif italic text-[10px] uppercase tracking-tighter">Artigianale<br/>Dal 1973</span>
+        </div>
+      </div>
+      <h3 class="font-headline-md text-headline-md italic mb-8">"Quality is not an act, it is a habit."</h3>
+      <img class="w-full h-96 object-cover mb-32 grayscale-[0.2]"
+           src="https://lh3.googleusercontent.com/aida-public/AB6AXuADhEcKVExBlQSjrvDfJY7LX9whBdWh9_f5umy1cs2goTAM4npWI8aexQyxqrbMZXilCRNRQZON15nHEwMNsqw4I2_XcK2OxwS1FcqFSaEAjM7X7OaNPDwyJ_zahCAGsxvvqYT1lzZMffaEeYgIY5pg1YKvvglLiSq16MzKEpRnkj6PZnKfblDI3VXzsmnym6ByZo8SN0_bhs9EZya-eKXVL142ZdYcbt3FnQE2eCKgYTY1leKdEjje89_7GzugVix27pgSgSwqHPFO"
+           alt="Chef hands dusting flour over fresh handmade tagliatelle pasta"/>
+    </div>
+  </section>
+
+</main>
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer class="bg-stone-50 border-t border-stone-200 py-20 px-8 flex flex-col items-center text-center gap-6">
+  <span class="font-serif italic text-lg text-stone-900">Settantatré</span>
+  <div class="flex flex-col md:flex-row gap-8 font-serif text-sm tracking-wide text-stone-500">
+    <a class="hover:text-stone-900 transition-colors" href="https://www.google.com/maps?q=Via+del+Corso+73,Roma" target="_blank" rel="noopener">Via del Corso 73, Roma</a>
+    <a class="hover:text-stone-900 transition-colors" href="tel:+390612345678">+39 06 1234 5678</a>
+    <span class="hover:text-stone-900 transition-colors cursor-pointer">Instagram</span>
+  </div>
+  <p class="font-serif text-sm tracking-wide text-stone-400 mt-8">© Settantatré. L'Arte della Semplicità.</p>
+</footer>
+
+<!-- ══════════ BOTTOM NAV (Mobile) ══════════ -->
+<nav class="md:hidden fixed bottom-0 w-full z-50 flex justify-around items-center px-6 pb-6 pt-3 bg-white border-t border-stone-200">
+  <a class="flex flex-col items-center justify-center text-stone-400 hover:text-stone-900 active:scale-95 transition-transform" href="index.html">
+    <span class="material-symbols-outlined">home_app_logo</span>
+    <span class="font-serif text-[10px] uppercase tracking-widest font-medium mt-1">Home</span>
+  </a>
+  <a class="flex flex-col items-center justify-center text-stone-400 hover:text-stone-900 active:scale-95 transition-transform" href="menu.html">
+    <span class="material-symbols-outlined">restaurant_menu</span>
+    <span class="font-serif text-[10px] uppercase tracking-widest font-medium mt-1">Menu</span>
+  </a>
+  <a class="flex flex-col items-center justify-center text-stone-400 hover:text-stone-900 active:scale-95 transition-transform" href="about.html">
+    <span class="material-symbols-outlined">menu_book</span>
+    <span class="font-serif text-[10px] uppercase tracking-widest font-medium mt-1">About</span>
+  </a>
+  <a class="flex flex-col items-center justify-center text-[#EDA27C] font-bold" href="book.html">
+    <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">event_available</span>
+    <span class="font-serif text-[10px] uppercase tracking-widest font-medium mt-1">Book</span>
+  </a>
+</nav>
+
+<script src="js/main.js"></script>
+</body>
+</html>

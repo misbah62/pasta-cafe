@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html class="light" lang="it">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Settantatré — Pasta artigianale romana dal 1973. L'arte della semplicità in ogni piatto."/>
+  <title>Settantatré | Home</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&family=Newsreader:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <link href="css/style.css" rel="stylesheet"/>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary-fixed": "#ffdbcb",
+            "on-secondary-fixed-variant": "#474747",
+            "outline": "#85736b",
+            "on-background": "#1c1b1b",
+            "tertiary-fixed-dim": "#88d3d6",
+            "secondary-fixed-dim": "#c6c6c6",
+            "primary-fixed-dim": "#ffb691",
+            "surface-dim": "#dcd9d9",
+            "surface-container-highest": "#e5e2e1",
+            "inverse-surface": "#313030",
+            "surface-tint": "#8a4f2f",
+            "surface-bright": "#fcf9f8",
+            "tertiary": "#0e696c",
+            "on-error": "#ffffff",
+            "on-tertiary-fixed-variant": "#004f52",
+            "tertiary-fixed": "#a4eff2",
+            "outline-variant": "#d8c2b9",
+            "surface-container-lowest": "#ffffff",
+            "surface": "#fcf9f8",
+            "on-primary": "#ffffff",
+            "on-surface": "#1c1b1b",
+            "primary": "#8a4f2f",
+            "on-error-container": "#93000a",
+            "inverse-on-surface": "#f3f0ef",
+            "surface-container-low": "#f6f3f2",
+            "on-secondary-container": "#646464",
+            "on-primary-fixed": "#341100",
+            "on-tertiary": "#ffffff",
+            "error": "#ba1a1a",
+            "secondary-fixed": "#e2e2e2",
+            "on-tertiary-container": "#004e51",
+            "on-tertiary-fixed": "#002021",
+            "primary-container": "#eda27c",
+            "secondary-container": "#e2e2e2",
+            "inverse-primary": "#ffb691",
+            "on-secondary": "#ffffff",
+            "on-primary-container": "#6c3719",
+            "on-secondary-fixed": "#1b1b1b",
+            "on-surface-variant": "#53443d",
+            "surface-container-high": "#eae7e7",
+            "surface-container": "#f0eded",
+            "tertiary-container": "#75c0c3",
+            "background": "#fcf9f8",
+            "secondary": "#5e5e5e",
+            "on-primary-fixed-variant": "#6e381b",
+            "surface-variant": "#e5e2e1",
+            "error-container": "#ffdad6"
+          },
+          borderRadius: {
+            "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"
+          },
+          spacing: {
+            "container-padding": "64px", "stack-md": "24px", "stack-sm": "12px",
+            "base": "8px", "gutter": "24px", "section-gap": "128px"
+          },
+          fontFamily: {
+            "body-lg": ["Plus Jakarta Sans"], "headline-md": ["Newsreader"],
+            "body-md": ["Plus Jakarta Sans"], "headline-xl": ["Newsreader"],
+            "headline-lg": ["Newsreader"], "label-caps": ["Plus Jakarta Sans"]
+          },
+          fontSize: {
+            "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+            "headline-md": ["32px", {"lineHeight": "1.2", "fontWeight": "500"}],
+            "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+            "headline-xl": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+            "headline-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "400"}],
+            "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "700"}]
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary-container selection:text-on-primary-container">
+
+<!-- ══════════ TOP NAV ══════════ -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-stone-200 border-b-[0.5px]">
+  <div class="flex justify-between items-center w-full px-8 py-4 max-w-[1440px] mx-auto">
+    <div class="flex-1 hidden md:flex gap-8">
+      <a class="font-serif italic tracking-tight text-[#EDA27C]" href="index.html">Home</a>
+      <a class="font-serif italic tracking-tight text-stone-500 hover:text-[#EDA27C] transition-colors duration-300" href="menu.html">Menu</a>
+    </div>
+    <div class="flex-none text-2xl font-bold font-serif text-stone-900">Settantatré</div>
+    <div class="flex-1 flex justify-end items-center gap-6">
+      <a class="hidden md:block font-serif italic tracking-tight text-stone-500 hover:text-[#EDA27C] transition-colors duration-300" href="about.html">About</a>
+      <a class="hidden md:block font-serif italic tracking-tight text-stone-500 hover:text-[#EDA27C] transition-colors duration-300" href="book.html">Book</a>
+      <span class="material-symbols-outlined text-stone-900 cursor-pointer">shopping_basket</span>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- ══════════ HERO ══════════ -->
+  <section class="relative h-screen min-h-[700px] flex items-center overflow-hidden">
+    <div class="absolute inset-0 z-0">
+      <img class="w-full h-full object-cover grayscale-[20%]"
+           src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6IgnLMmqBBzezDJD4fzPg6Jdu09yF6IE3EwlcIwANLKd2s2emznypV2VheDL7T8X5cnMCHa_R3eCFF7SIwTsIcPXzcEhyjql8pVYsGgW_RP4D8DqE8xCV6Y8ufiucmmDoCevPH-JymOuNF0am8Zd4sE1L92Pc9SUNJwqKjA36XiZfKcl42OlUB7WLTbNiwS7EAJGr7WCaazQLeVHa9ORsQjPgzfUwte0xLNYDt6DRlQZ1rrCiD1szH_Y1re8uG_29t37-1dU6Vaev"
+           alt="Close-up of fresh handmade golden pasta strands"/>
+      <div class="absolute inset-0 bg-stone-950/20"></div>
+    </div>
+    <div class="relative z-10 px-container-padding max-w-[1440px] mx-auto w-full">
+      <div class="max-w-2xl">
+        <span class="font-label-caps text-label-caps text-primary-fixed mb-4 block">L'ARTE DELLA SEMPLICITÀ</span>
+        <h1 class="font-headline-xl text-headline-xl text-white mb-8">La perfezione in ogni chicco di farina.</h1>
+        <a href="menu.html" class="inline-block bg-primary-container text-on-primary-container px-8 py-4 font-label-caps text-label-caps tracking-widest hover:bg-primary-fixed transition-colors">
+          ESPLORA IL NOSTRO MENU
+        </a>
+      </div>
+    </div>
+    <!-- Heritage Seal -->
+    <div class="absolute bottom-20 right-20 hidden lg:flex items-center justify-center w-32 h-32 rounded-full heritage-seal border-2 border-white/20">
+      <div class="text-center text-white">
+        <p class="font-serif italic text-xs leading-tight">Tradizione<br/>Romana</p>
+        <p class="font-bold text-lg">73</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ SPECIAL OF THE DAY ══════════ -->
+  <section class="py-section-gap px-container-padding max-w-[1440px] mx-auto">
+    <div class="flex flex-col md:flex-row gap-gutter items-center">
+      <div class="w-full md:w-1/2 relative">
+        <div class="aspect-[4/5] overflow-hidden border border-stone-200">
+          <img class="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+               src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRgdGcbq_5EirGBsIKAl1u7sevN8YV0oxl2CSjHaekgUW8W9L-UqgGW9c0-ABxGBkm4DNlQ1ZrdlA2ifGkyalFsMSXQmU24-r2Dq_rBUiH0_VTIR_msv-IiFCk0M7EPq0oHT2OyyctPjahQWBuy3PENZBxJ3LVDlYaJx_oHIxByS922rSnodW1DXH7l2ibdDw9evKcD2vzjLbIxk9Mm30dLfmWIE-XrWQsf7yQYPeZx1f1QaCU-tk6fgXN2IXjLes2P8CTSUF6CEDC"
+               alt="Gourmet presentation of Pappardelle al Cinghiale"/>
+        </div>
+        <div class="absolute -bottom-10 -right-10 bg-surface p-12 hidden lg:block border border-stone-100">
+          <span class="font-label-caps text-label-caps text-primary mb-2 block">OGGI IN CUCINA</span>
+          <h3 class="font-headline-md text-headline-md text-stone-900 italic">Pappardelle al Cinghiale</h3>
+        </div>
+      </div>
+      <div class="w-full md:w-1/2 md:pl-20 mt-12 md:mt-0">
+        <span class="font-label-caps text-label-caps text-primary mb-4 block">PIATTO DEL GIORNO</span>
+        <h2 class="font-headline-lg text-headline-lg text-stone-900 mb-6 leading-tight">La forza della selva incontra la dolcezza della sfoglia.</h2>
+        <p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-md">
+          Una pasta lunga e larga, trafilata al bronzo per accogliere il sapore intenso del ragù di cinghiale maremmano, marinato per dodici ore in vino rosso e bacche di ginepro.
+        </p>
+        <div class="flex flex-col gap-4">
+          <div class="flex items-center gap-4 text-stone-500">
+            <span class="material-symbols-outlined">restaurant</span>
+            <span class="font-body-md text-body-md italic font-serif">Sfoglia tirata a mano</span>
+          </div>
+          <div class="flex items-center gap-4 text-stone-500">
+            <span class="material-symbols-outlined">local_fire_department</span>
+            <span class="font-body-md text-body-md italic font-serif">Cottura lenta (6 ore)</span>
+          </div>
+        </div>
+        <a href="book.html" class="mt-12 inline-block border border-stone-900 px-8 py-4 font-label-caps text-label-caps tracking-widest hover:bg-stone-900 hover:text-white transition-colors">
+          PRENOTA UN TAVOLO
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ OUR HERITAGE ══════════ -->
+  <section class="bg-stone-50 py-section-gap overflow-hidden">
+    <div class="max-w-[1440px] mx-auto px-container-padding">
+      <div class="grid grid-cols-12 gap-gutter">
+        <div class="col-span-12 lg:col-span-6 flex flex-col justify-center">
+          <span class="font-label-caps text-label-caps text-primary mb-6 block uppercase tracking-[0.2em]">La Nostra Eredità</span>
+          <h2 class="font-headline-xl text-headline-xl text-stone-900 mb-8 italic">Il segreto dei settantatré tuorli.</h2>
+          <div class="w-16 h-[1px] bg-primary mb-8"></div>
+          <p class="font-body-lg text-body-lg text-on-surface-variant mb-6">
+            Non è solo un nome. È un dogma. Per ogni chilogrammo di farina speciale macinata a pietra, utilizziamo esattamente settantatré tuorli di uova da galline ruspanti livornesi.
+          </p>
+          <p class="font-body-lg text-body-lg text-on-surface-variant mb-10">
+            Questa proporzione aurea conferisce alla nostra pasta un colore dorato profondo, una tenacia unica al morso e una capacità ineguagliabile di legarsi ai condimenti. Un rito che ripetiamo ogni mattina alle 5:00, nel cuore di Roma.
+          </p>
+          <div class="flex gap-12">
+            <div>
+              <h4 class="font-headline-md text-headline-md text-primary">73</h4>
+              <p class="font-label-caps text-[10px] text-stone-500 uppercase tracking-widest">Tuorli per Kg</p>
+            </div>
+            <div>
+              <h4 class="font-headline-md text-headline-md text-primary">00</h4>
+              <p class="font-label-caps text-[10px] text-stone-500 uppercase tracking-widest">Farine Raffinate</p>
+            </div>
+            <div>
+              <h4 class="font-headline-md text-headline-md text-primary">1973</h4>
+              <p class="font-label-caps text-[10px] text-stone-500 uppercase tracking-widest">Anno di Fondazione</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-12 lg:col-span-5 lg:col-start-8 mt-12 lg:mt-0">
+          <div class="relative">
+            <img class="w-full grayscale brightness-90 shadow-2xl"
+                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5tpr_cUR_H86xB80QMj2k_FkHaTmyqCHuNs0woErx1c4f-lT4g3XPUUSOt-rJpNtbQR35KYrss5lOGllFow4iqQFoqyOabPTXjPGwziMU3vMVLG1FKuq1nQPD0Nv5sNvdTjzLjXLqbl6fh_LpKqQGC86feTmGuvU2NRd6ji-3M1rswh7WIoqiGIVoL3uv9MpwBYKOM3iXn1ZJfZK7MSHEKho0Ayxdj-vM09k6cV0CpNtRHVsDiITlYieawZ3fs2UARSokVjciapoq"
+                 alt="Chef hands kneading dough"/>
+            <div class="absolute -top-12 -left-12 border-[0.5px] border-primary w-48 h-48 -z-10 hidden lg:block"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ PRODUCT GALLERY ══════════ -->
+  <section class="py-section-gap px-container-padding max-w-[1440px] mx-auto">
+    <div class="text-center mb-20">
+      <span class="font-label-caps text-label-caps text-primary mb-4 block">L'ECCELLENZA IN VETRINA</span>
+      <h2 class="font-headline-lg text-headline-lg italic">Le Forme della Tradizione</h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Large Card -->
+      <div class="md:col-span-2 group cursor-pointer">
+        <div class="relative aspect-video overflow-hidden mb-6">
+          <img class="w-full h-full object-cover grayscale-[30%] group-hover:scale-105 transition-transform duration-1000"
+               src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrdLrj0L0UO9Sze_OmLxysHv_ZcszibWcfnhF_EjLp_gyJWNKDgtDfAuCrdLJd3MXRbXoiSFSDR-xdYbWrumxgJ8xncgTiGH67ToOi32CGh44TkZp2TyPQsvm0gIlfRJw-S2XpaMlDvwRVhSncIPy9rHcZmem13avRS8o-jrhh08wLkHtNIE9xU1waVULfIpVcNNKeMOAi-Xbtgi23p7ZUf3MhDRWISxj8dtBqEz95jtLaaRy4MbVR1-9yeivNfmuA8PdKxgRPsHcC"
+               alt="Rigatoni pasta on textured background"/>
+          <div class="absolute bottom-6 left-6 opacity-0 group-hover:opacity-100 transition-opacity">
+            <a href="menu.html" class="bg-white px-6 py-3 font-label-caps text-[10px] tracking-widest">ACQUISTA ORA</a>
+          </div>
+        </div>
+        <div class="flex justify-between items-baseline">
+          <h4 class="font-headline-md text-headline-md italic">Rigatoni Bronzei</h4>
+          <span class="font-label-caps text-label-caps text-stone-500">€12.00 / 500G</span>
+        </div>
+      </div>
+      <!-- Tall Card -->
+      <div class="group cursor-pointer">
+        <div class="relative h-[600px] overflow-hidden mb-6">
+          <img class="w-full h-full object-cover grayscale-[30%] group-hover:scale-105 transition-transform duration-1000"
+               src="https://lh3.googleusercontent.com/aida-public/AB6AXuAERFM18m6lxuZrkbRPZWDdHP5ebJ85IaBM8-NBOlr3X7fQBEZEQlUJQ1wnahMl6AnQ8S2yjxuz9JPkuqYRTuis5JB7nBhrWYLZ_juDNK9hWFlG6BnqlArJHO_Rgbcrc7UCqWEmbNL54yZQ5tpw5C5PWzbUzrB9FoupOznRK1W3Ak6hCU5uGsyzz5x59y8dt7dzCzzw0sBuAldqx0fltVl-OqnLb8hUgJ_AQHy0cU4de8IRYAgCVr_Qib2vnz9os_nb7zeEHEb9KIUn"
+               alt="Spaghetti bundles tied with twine"/>
+        </div>
+        <div class="flex justify-between items-baseline">
+          <h4 class="font-headline-md text-headline-md italic">Spaghetti alla Chitarra</h4>
+          <span class="font-label-caps text-label-caps text-stone-500">€14.00</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer class="bg-stone-50 border-t border-stone-200 mt-32">
+  <div class="flex flex-col items-center text-center py-20 px-8 gap-6 max-w-[1440px] mx-auto">
+    <div class="font-serif italic text-lg text-stone-900">Settantatré</div>
+    <div class="flex flex-wrap justify-center gap-12 my-8">
+      <a class="font-serif text-sm tracking-wide text-stone-500 hover:text-stone-900 transition-colors" href="https://www.google.com/maps?q=Via+del+Corso+73,Roma" target="_blank" rel="noopener">Via del Corso 73, Roma</a>
+      <a class="font-serif text-sm tracking-wide text-stone-500 hover:text-stone-900 transition-colors" href="tel:+390612345678">+39 06 1234 5678</a>
+      <a class="font-serif text-sm tracking-wide text-stone-500 hover:text-stone-900 transition-colors underline decoration-[#EDA27C]" href="#">Instagram</a>
+    </div>
+    <p class="font-serif text-sm tracking-wide text-stone-500">© Settantatré. L'Arte della Semplicità.</p>
+  </div>
+</footer>
+
+<!-- ══════════ BOTTOM NAV (Mobile) ══════════ -->
+<nav class="md:hidden fixed bottom-0 w-full z-50 flex justify-around items-center px-6 pb-6 pt-3 bg-white border-t border-stone-200">
+  <a class="flex flex-col items-center justify-center text-[#EDA27C] font-bold" href="index.html">
+    <span class="material-symbols-outlined">home_app_logo</span>
+    <span class="font-serif text-[10px] uppercase tracking-widest font-medium mt-1">Home</span>
+  </a>
+  <a class="flex flex-col items-center justify-center text-stone-400 hover:text-stone-900 active:scale-95 transition-transform" href="menu.html">
+    <span class="material-symbols-outlined">restaurant_menu</span>
+    <span class="font-serif text-[10px] uppercase tracking-widest font-medium mt-1">Menu</span>
+  </a>
+  <a class="flex flex-col items-center justify-center text-stone-400 hover:text-stone-900 active:scale-95 transition-transform" href="about.html">
+    <span class="material-symbols-outlined">menu_book</span>
+    <span class="font-serif text-[10px] uppercase tracking-widest font-medium mt-1">About</span>
+  </a>
+  <a class="flex flex-col items-center justify-center text-stone-400 hover:text-stone-900 active:scale-95 transition-transform" href="book.html">
+    <span class="material-symbols-outlined">event_available</span>
+    <span class="font-serif text-[10px] uppercase tracking-widest font-medium mt-1">Book</span>
+  </a>
+</nav>
+
+<script src="js/main.js"></script>
+</body>
+</html>
